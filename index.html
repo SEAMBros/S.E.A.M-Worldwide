@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EA Global | Shaping the Future</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
+  <style>
+    body { background: #0b0e11; color: #f0f0f0; }
+    nav, footer { background: #111; }
+    h2, h3 { color: #00aaff; }
+    header img.logo { max-height: 60px; }
+    .grid img { max-width: 100%; border-radius: 8px; }
+    .timeline { border-left: 3px solid #00aaff; padding-left: 1rem; margin: 2rem 0; }
+    .timeline p { margin: 0.5rem 0; }
+    .subsidiaries {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .sub-card {
+      background: #111; padding: 1rem; border-radius: 8px;
+      text-align: center; border: 1px solid #222;
+    }
+    .sub-card strong { display: block; margin-bottom: 0.3rem; color: #00ff88; }
+    footer a { color: #00aaff; }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="container-fluid">
+    <ul>
+      <li>
+        <img src="logos/ea-logo.png" alt="EA Logo" class="logo" />
+      </li>
+      <li><strong>EA Global</strong></li>
+    </ul>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#subsidiaries">Subsidiaries</a></li>
+      <li><a href="#timeline">History</a></li>
+      <li><a href="#contact" role="button">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <main class="container">
+    <section>
+      <hgroup>
+        <h2>EA Global</h2>
+        <h3>Shaping the Future, Globally</h3>
+      </hgroup>
+      <p><em>The worldwide arm of EA Enterprises, overseeing innovation, expansion, and influence across every continent and beyond.</em></p>
+      <figure>
+        <img src="https://source.unsplash.com/1600x600/?earth,technology" alt="Global Technology">
+        <figcaption>From smart cities to space colonies — EA Global leads the way.</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <!-- About -->
+  <section id="about" class="container">
+    <article>
+      <h2>About Us</h2>
+      <p>Born from the vision of <strong>EA Enterprises</strong> and strengthened by <strong>S.M. Technologies</strong>, EA Global represents the union of engineering, animation, machine learning, and enterprise power. We exist to take what our subsidiaries create and bring it to the world stage — responsibly, ambitiously, and at scale.</p>
+    </article>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="container">
+    <h2>Flagship Initiatives</h2>
+    <div class="grid">
+      <article>
+        <h3>Smart Cities</h3>
+        <p>Urban ecosystems powered by SEAM’s AI engines and EA Enterprises’ hardware pipelines. Energy-efficient, carbon-negative, and globally connected.</p>
+        <img src="https://source.unsplash.com/400x300/?smartcity,futuristic" alt="Smart City">
+      </article>
+      <article>
+        <h3>Renewable Networks</h3>
+        <p>EA Global funds and deploys worldwide clean energy infrastructures — building solar farms, offshore wind grids, and next-gen storage solutions.</p>
+        <img src="https://source.unsplash.com/400x300/?renewable,energy" alt="Renewable Energy">
+      </article>
+      <article>
+        <h3>Space Colonies</h3>
+        <p>In collaboration with SEAM Technologies, EA Global has its sights set on the stars — creating the frameworks for off-world living and commerce.</p>
+        <img src="https://source.unsplash.com/400x300/?space,technology" alt="Space Technology">
+      </article>
+    </div>
+  </section>
+
+  <!-- Subsidiaries -->
+  <section id="subsidiaries" class="container">
+    <h2>Subsidiaries Under EA Global</h2>
+    <div class="subsidiaries">
+      <div class="sub-card">
+        <img src="logos/ea-logo.png" alt="EA Enterprises Logo" style="max-height:50px;">
+        <strong>EA Enterprises</strong>
+        Consumer hardware + global storefronts
+      </div>
+      <div class="sub-card">
+        <img src="logos/ea-logo.png" alt="EA Parts Logo" style="max-height:50px;">
+        <strong>EA Parts</strong>
+        Manufacturing backbone, precision components
+      </div>
+      <div class="sub-card">
+        <img src="logos/smtech-logo.png" alt="SM Tech Logo" style="max-height:50px;">
+        <strong>S.E.A.M. Technologies</strong>
+        Research & development in AI + 3D animation
+      </div>
+      <div class="sub-card">
+        <img src="logos/ea-logo.png" alt="EA Capital Logo" style="max-height:50px;">
+        <strong>EA Capital</strong>
+        Investment arm funding future ventures
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline -->
+  <section id="timeline" class="container">
+    <h2>Our Story</h2>
+    <p>EA Global didn’t appear overnight — it was the inevitable evolution of a powerful vision shared by lifelong partners and builders.</p>
+    <div class="timeline">
+      <p><strong>2015</strong> — EA Enterprises founded, focusing on high-performance hardware.</p>
+      <p><strong>2018</strong> — EA Parts created, securing industrial manufacturing pipelines.</p>
+      <p><strong>2020</strong> — S.M. Technologies emerges, reshaping 3D programming.</p>
+      <p><strong>2023</strong> — Joint venture SEAM Tech revolutionizes AI + animation workflows.</p>
+      <p><strong>2025</strong> — EA Global established, unifying expansion and international presence.</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="container">
+    <h2>Contact EA Global</h2>
+    <form class="grid">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit" onclick="event.preventDefault()">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="container">
+    <small>
+      <a href="https://<your-username>.github.io/ea-enterprises/">EA Enterprises</a> • 
+      <a href="https://<your-username>.github.io/seam-technologies/">SEAM Tech</a> • 
+      <a href="https://<your-username>.github.io/ea-parts/">EA Parts</a>
+    </small>
+  </footer>
+</body>
+</html>
